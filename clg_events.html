@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>TechFest 2026</title>
+
+    <style>
+
+        /* Basic Style */
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+
+        /* Header / Navbar */
+
+        header {
+            background-color: #263238;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .college-name {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+
+        /* Hero Section */
+
+        .hero {
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero button {
+            background-color: white;
+            color: #008c9e;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #eeeeee;
+        }
+
+
+        /* Events Section */
+
+        .events {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .events h2 {
+            font-size: 30px;
+            color: #263238;
+        }
+
+        .event-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+
+        /* Event Cards */
+
+        .event-card {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 2px 8px gray;
+
+            /* Needed for badge */
+            position: relative;
+        }
+
+        .event-card h3 {
+            color: #008c9e;
+        }
+
+        .event-card p {
+            line-height: 1.5;
+        }
+
+        .event-card button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+
+            padding: 10px 20px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+        .event-card button:hover {
+            background-color: #008c9e;
+        }
+
+
+        /* NEW Badge */
+
+        .new-badge {
+            position: absolute;
+
+            top: 10px;
+            right: 10px;
+
+            background-color: red;
+            color: white;
+
+            padding: 5px 8px;
+
+            border-radius: 5px;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+
+        /* Schedule Section */
+
+        .schedule {
+            background-color: #e0f7fa;
+            padding: 50px;
+
+            text-align: center;
+        }
+
+        .schedule h2 {
+            font-size: 30px;
+        }
+
+        .schedule-table {
+            width: 80%;
+            margin: auto;
+
+            border-collapse: collapse;
+
+            background-color: white;
+        }
+
+        .schedule-table th {
+            background-color: #263238;
+            color: white;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+
+        /* Footer */
+
+        footer {
+            background-color: #263238;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        footer a:hover {
+            color: #00bcd4;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header / Navigation -->
+
+    <header>
+
+        <div class="college-name">
+            ABC College of Engineering
+        </div>
+
+        <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#events">
+                Events
+            </a>
+
+            <a href="#schedule">
+                Schedule
+            </a>
+
+            <a href="#speakers">
+                Speakers
+            </a>
+
+            <a href="#register">
+                Register
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>
+            TECHFEST 2026
+        </h1>
+
+        <p>
+            Welcome to our Annual Tech Fest!
+            Join us for exciting technical events,
+            competitions and fun activities.
+        </p>
+
+        <p>
+            Date: 15 October 2026
+        </p>
+
+        <p>
+            Venue: ABC College Main Auditorium
+        </p>
+
+        <button>
+            Register Now
+        </button>
+
+    </section>
+
+
+    <!-- Events Section -->
+
+    <section class="events" id="events">
+
+        <h2>
+            Our Events
+        </h2>
+
+        <div class="event-container">
+
+
+            <!-- Event 1 -->
+
+            <div class="event-card">
+
+                <h3>
+                    Coding Challenge
+                </h3>
+
+                <p>
+                    Test your programming skills
+                    and solve interesting coding problems.
+                </p>
+
+                <p>
+                    Time: 10:00 AM
+                </p>
+
+                <button>
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- Event 2 -->
+
+            <div class="event-card">
+
+                <div class="new-badge">
+                    NEW
+                </div>
+
+                <h3>
+                    Web Design
+                </h3>
+
+                <p>
+                    Create an attractive and
+                    creative website using HTML and CSS.
+                </p>
+
+                <p>
+                    Time: 11:30 AM
+                </p>
+
+                <button>
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- Event 3 -->
+
+            <div class="event-card">
+
+                <h3>
+                    Robo Race
+                </h3>
+
+                <p>
+                    Build and control your robot
+                    and compete in an exciting race.
+                </p>
+
+                <p>
+                    Time: 1:30 PM
+                </p>
+
+                <button>
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- Event 4 -->
+
+            <div class="event-card">
+
+                <h3>
+                    Quiz Competition
+                </h3>
+
+                <p>
+                    Test your knowledge of technology,
+                    science and general topics.
+                </p>
+
+                <p>
+                    Time: 3:00 PM
+                </p>
+
+                <button>
+                    Register
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Schedule Section -->
+
+    <section class="schedule" id="schedule">
+
+        <h2>
+            Event Schedule
+        </h2>
+
+        <table class="schedule-table">
+
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+                <th>Venue</th>
+            </tr>
+
+            <tr>
+                <td>Coding Challenge</td>
+                <td>10:00 AM</td>
+                <td>Computer Lab</td>
+            </tr>
+
+            <tr>
+                <td>Web Design</td>
+                <td>11:30 AM</td>
+                <td>IT Lab</td>
+            </tr>
+
+            <tr>
+                <td>Robo Race</td>
+                <td>1:30 PM</td>
+                <td>College Ground</td>
+            </tr>
+
+            <tr>
+                <td>Quiz Competition</td>
+                <td>3:00 PM</td>
+                <td>Seminar Hall</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- Speakers Section -->
+
+    <section class="events" id="speakers">
+
+        <h2>
+            Speakers
+        </h2>
+
+        <p>
+            Industry experts and experienced professionals
+            will share their knowledge and ideas.
+        </p>
+
+    </section>
+
+
+    <!-- Register Section -->
+
+    <section class="hero" id="register">
+
+        <h2>
+            Ready to Join TECHFEST 2026?
+        </h2>
+
+        <p>
+            Register now and participate in exciting events.
+        </p>
+
+        <button>
+            Register Now
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>
+            ABC College of Engineering
+        </h3>
+
+        <p>
+            Contact: 98765 43210
+        </p>
+
+        <p>
+            Email: techfest@abccollege.com
+        </p>
+
+        <p>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                YouTube
+            </a>
+
+        </p>
+
+        <p>
+            © 2026 ABC College of Engineering.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>

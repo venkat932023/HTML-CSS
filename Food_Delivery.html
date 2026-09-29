@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>FoodExpress</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: orange;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 70px;
+            background-color: #ffe0b2;
+        }
+
+        .hero h1 {
+            color: #e65100;
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero button {
+            background-color: orange;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        /* Restaurant Section */
+        .restaurants {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .restaurant-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .restaurant {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+
+            position: relative;
+        }
+
+        .restaurant h3 {
+            color: orange;
+        }
+
+        .restaurant button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+
+        /* Offer Badge */
+        .offer {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            background-color: red;
+            color: white;
+
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+
+        /* Food Section */
+        .food {
+            text-align: center;
+            padding: 40px;
+            background-color: #fff3e0;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .food-item {
+            background-color: white;
+            width: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .food-item h3 {
+            color: #e65100;
+        }
+
+        .food-item button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            FoodExpress
+        </div>
+
+        <div>
+
+            <a href="#">Home</a>
+
+            <a href="#restaurants">
+                Restaurants
+            </a>
+
+            <a href="#offers">
+                Offers
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <button>
+                Login
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+
+    <div class="hero">
+
+        <h1>
+            Delicious Food, Delivered Fast!
+        </h1>
+
+        <p>
+            Order your favorite food from the best restaurants
+            and get it delivered to your doorstep.
+        </p>
+
+        <button>
+            Order Now
+        </button>
+
+    </div>
+
+
+    <!-- Restaurants -->
+
+    <div class="restaurants" id="restaurants">
+
+        <h2>
+            Popular Restaurants
+        </h2>
+
+        <div class="restaurant-container">
+
+
+            <div class="restaurant">
+
+                <h3>
+                    Pizza Palace
+                </h3>
+
+                <p>
+                    Pizza, Italian, Fast Food
+                </p>
+
+                <p>
+                    Rating: 4.5
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="restaurant">
+
+                <div class="offer">
+                    20% OFF
+                </div>
+
+                <h3>
+                    Burger Hub
+                </h3>
+
+                <p>
+                    Burgers, Fries, Fast Food
+                </p>
+
+                <p>
+                    Rating: 4.3
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="restaurant">
+
+                <h3>
+                    Spice Kitchen
+                </h3>
+
+                <p>
+                    Biryani, Indian, Chinese
+                </p>
+
+                <p>
+                    Rating: 4.7
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Popular Food -->
+
+    <div class="food" id="offers">
+
+        <h2>
+            Popular Food Items
+        </h2>
+
+        <div class="food-container">
+
+
+            <div class="food-item">
+
+                <h3>
+                    Biryani
+                </h3>
+
+                <p>
+                    ₹250
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="food-item">
+
+                <h3>
+                    Pizza
+                </h3>
+
+                <p>
+                    ₹299
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="food-item">
+
+                <h3>
+                    Burger
+                </h3>
+
+                <p>
+                    ₹199
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="food-item">
+
+                <h3>
+                    Noodles
+                </h3>
+
+                <p>
+                    ₹180
+                </p>
+
+                <button>
+                    Order Now
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+        <p>
+            © 2026 FoodExpress. All Rights Reserved.
+        </p>
+
+        <p>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                YouTube
+            </a>
+
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
